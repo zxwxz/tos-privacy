@@ -2,28 +2,46 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>AutoPost2025</title>
+<title>AutoPost2025 Scheduler</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 body{font-family:Arial,Helvetica,sans-serif;margin:2rem;line-height:1.6;}
-h1{color:#e60023;}
-code{background:#f2f2f2;padding:2px 4px;border-radius:4px;}
+h1{color:#e60023;margin-bottom:0.5em;}
+ul{margin-left:1em;}
+section{margin-bottom:1.5em;}
+a{color:#e60023;text-decoration:none;}
+a:hover{text-decoration:underline;}
 </style>
 </head>
 <body>
-<h1>AutoPost2025</h1>
-<p>A lightweight personal tool that uploads and schedules <strong>720&nbsp;p AI‑generated short videos</strong> to a TikTok account automatically, via the official TikTok <code>Content&nbsp;Posting&nbsp;API</code>.</p>
+<h1>AutoPost2025 Scheduler</h1>
 
+<section>
+<p><strong>AutoPost2025</strong> is a lightweight web utility that automatically uploads videos to a connected TikTok creator account and schedules them for future publication—no manual interaction required once a queue is set.</p>
+</section>
+
+<section>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Bulk scheduling</strong>: enqueue days&rsquo; worth of content in a single session.</li>
+<li><strong>Direct Post API</strong>: videos go live at the exact timestamp you specify.</li>
+<li><strong>Private or public</strong>: choose privacy level per post.</li>
+<li><strong>Token security</strong>: OAuth access tokens are stored server‑side and can be revoked at any time.</li>
+</ul>
+</section>
+
+<section>
 <h2>How It Works</h2>
 <ol>
-<li>Generate a 5‑second 720&nbsp;p clip on mobile (WAN&nbsp;2.1 / Veo etc.).</li>
-<li>The script calls <code>/v2/post/publish/video/init</code> with <code>source=FILE_UPLOAD</code>.</li>
-<li>TikTok publishes the video at the specified <code>publish_time</code>.</li>
+<li>Authenticate once with TikTok&rsquo;s Content&nbsp;Posting&nbsp;API.</li>
+<li>Drop video files into the queue and set publish times.</li>
+<li>AutoPost2025 handles the upload, status checks, and final publication.</li>
 </ol>
+</section>
 
-<h2>Data Usage &amp; Privacy</h2>
-<p>The tool stores only the OAuth access token and video filenames required for uploading. No personal data is collected or shared.</p>
+<section>
+<p>For details on data usage, please see our <a href="privacy_policy.md">Privacy&nbsp;Policy</a> and <a href="terms_of_service.md">Terms&nbsp;of&nbsp;Service</a>.</p>
+</section>
 
-<p><a href="terms_of_service.md">Terms&nbsp;of&nbsp;Service</a> · <a href="privacy_policy.md">Privacy&nbsp;Policy</a></p>
 </body>
 </html>
